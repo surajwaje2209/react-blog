@@ -8,6 +8,7 @@
 }
 
 .bike-card:hover {
+  color: #666;
   transform: scale(1.05);
 }
 
@@ -28,4 +29,10 @@
   font-size: 1rem;
   color: #666;
   margin-bottom: 15px;
+}
+.bike-link {
+  text-decoration: none;
+}
+.bike-link {
+  text-decoration: none;
 }
