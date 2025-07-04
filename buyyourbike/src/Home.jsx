@@ -44,6 +44,26 @@ const bikes = [
     price: "₹1.40 Lakh",
     image: "https://imgs.search.brave.com/xl0jvD5C9U8O9ewTS28FoQQGvl48U6PTBMTYRgZBimQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdXp1/a2lzdi5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjQvMDQv/Z2l4eGVyLXNmLTI1/MC1zdXp1a2ktc3Yu/cG5n",
   },
+  {
+    name: "BMW G 310 R",
+    price: "₹2.90 Lakh",
+    image: "https://imgs.search.brave.com/orRt7V94uksFDRgJfpsXfx3JdnaEASncr88NK0HsEe4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2FyYW5kYmlrZS5j/b20vX25leHQvaW1h/Z2U_dXJsPWh0dHBz/Oi8vaW1hZ2VzLmNh/cmFuZGJpa2UuY29t/L2Jpa2UtaW1hZ2Vz/L2NvbG9ycy9ibXcv/Zy0zMTAtci9ibXct/Zy0zMTAtci1saW1l/c3RvbmUtbWV0YWxs/aWMtcmVkLnBuZz92/PTE2MDIxNjU0NDgm/dz03NTAmcT03NQ",
+  },
+  {
+    name: "Kawasaki Ninja 300",
+    price: "₹3.40 Lakh",
+    image: "https://imgs.search.brave.com/vdT1rpB3IaOKDfCOxYC7oDggoES6HnVqexrkStEY1y4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudHJhY3Rvcmp1/bmN0aW9uLmNvbS9M/SU1FX0dSRUVOXzFf/YzM1YzQ3NTFmMC5w/bmc_Zm9ybWF0PXdl/YnAmcXVhbGl0eT00/MA",
+  },
+  {
+    name: "Ducati Monster",
+    price: "₹12.95 Lakh",
+    image: "https://imgs.search.brave.com/27JoRSBZttHJ9UHfu2eSnZMSP68WbB4HyXUUpxuXn38/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9hdXRv/LmhpbmR1c3RhbnRp/bWVzLmNvbS9fbmV4/dC9pbWFnZT91cmw9/aHR0cHM6Ly9pbWFn/ZXMuaGluZHVzdGFu/dGltZXMuY29tL2F1/dG8vaW1nLzIwMjMv/MTEvMjEvNDAweDIy/NS9Nb25zdGVyX0R1/Y2F0aV8xNzAwNTM3/NzI3MTQzXzE3MDA1/Mzc3MzI4OTgud2Vi/cCZ3PTM4NDAmcT03/NQ",
+  },
+  {
+    name: "Harley Davidson X440",
+    price: "₹2.40 Lakh",
+    image: "https://imgs.search.brave.com/Te4x2WfdBz4fvaZgMeJ7YVrlKf7mqQjuVQGauLJ-c1U/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWdk/LmFlcGxjZG4uY29t/LzM3MHgyMDgvbi9j/dy9lYy8xNDU2NTUv/eDQ0MC1yaWdodC1z/aWRlLXZpZXctOC5w/bmc_aXNpZz0wJnE9/ODA",
+  },
 ];
 
 const Home = () => {
