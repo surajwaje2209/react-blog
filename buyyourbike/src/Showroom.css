@@ -1,0 +1,23 @@
+.showroom-container {
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.showroom-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.showroom-info {
+  background-color: #fff7f0;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: left;
+  color: #333;
+  box-shadow: 0 0 10px rgba(255, 153, 0, 0.15);
+}
