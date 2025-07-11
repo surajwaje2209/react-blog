@@ -7,16 +7,20 @@ import Showroom from './Showroom';
 import Models from "./Models";
 import Contact from "./Contact";
 import BikeDetail from './BikeDetail';
+import Bikebooking from './Bikebooking';
+import Login from './Loginform';
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Login />}/>
+        <Route path="/Home" element={<Home />} />
         <Route path="/Showroom" element={<Showroom />} />
         <Route path="/models" element={<Models />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/bike/:bikeId" element={<BikeDetail />} />
+        <Route path="/Bikebooking" element ={<Bikebooking />}/>
       </Routes>
     </Router>
   );

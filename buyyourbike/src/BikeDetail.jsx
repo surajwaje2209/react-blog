@@ -1,5 +1,9 @@
-import React from "react";
+import React,{useState} from "react";
 import { useParams, Link } from "react-router-dom";
+import "./BikeDetail.css";
+import BikeBooking from "./Bikebooking";
+
+
 
 const bikes = [
   {
@@ -79,16 +83,21 @@ const bikes = [
 
 const BikeDetail = () => {
   const { bikeId } = useParams();
+  const [showBookingForm, setShowBookingForm] = useState(false);
 
-  
   const formatName = (name) => name.toLowerCase().replace(/\s+/g, "-");
   const bike = bikes.find((b) => formatName(b.name) === bikeId);
 
+  const handleBookingSubmit = (e) => {
+    e.preventDefault();
+    alert(`Booking submitted for ${bike.name}`);
+  };
+
   if (!bike) {
     return (
-      <div style={{ padding: "40px", textAlign: "center" }}>
+      <div className="bike-not-found">
         <h2>Bike Not Found</h2>
-        <Link to="/" style={{ color: "#ff6f00", textDecoration: "underline" }}>
+        <Link to="/Home" className="back-link">
           Go Back to Home
         </Link>
       </div>
@@ -96,20 +105,21 @@ const BikeDetail = () => {
   }
 
   return (
-    <div style={{ padding: "40px", textAlign: "center" }}>
+    <div className="bike-detail-container">
       <h1>{bike.name}</h1>
-      <img
-        src={bike.image}
-        alt={bike.name}
-        style={{ width: "400px", maxWidth: "90%", borderRadius: "12px", margin: "20px 0" }}
-      />
-      <h3 style={{ color: "#ff6f00", fontSize: "1.5rem" }}>{bike.price}</h3>
-      <p style={{ maxWidth: "600px", margin: "20px auto", lineHeight: "1.6", fontSize: "1.1rem" }}>
-        {bike.description}
-      </p>
-      <Link to="/" style={{ display: "inline-block", marginTop: "20px", color: "#e65100", fontWeight: "bold" }}>
-        ← Back to Home
-      </Link>
+      <img src={bike.image} alt={bike.name} className="bike-image" />
+      <h3 className="bike-price">{bike.price}</h3>
+      <p className="bike-description">{bike.description}</p>
+      {/* <BikeBooking bike={bike} /> */}
+
+       {!showBookingForm ? (
+        <button className="submit-btn" onClick={() => setShowBookingForm(true)}>
+          Book This Bike
+        </button>
+      ) : (
+        <BikeBooking bike={bike} onClose={() => setShowBookingForm(false)} />
+      )} 
+      <Link to="/Home" className="back-link">← Back to Home</Link>
     </div>
   );
 };
